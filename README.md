@@ -1,17 +1,45 @@
-# Front-End Checklist
+<h1 align="center">
+<br>
+  <img src="https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/src/img/banners/logo-front-end-checklist.jpg" alt="Front-End Checklist" width="170">
+  <br>
+    <br>
+  Front-End Checklist [traduction FR]
+  <br>
+</h1>
 
-[![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
-[![Contributors](https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg)](https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors)
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
-[![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+<h4 align="center">La Checklist Front-End est une liste exhaustive de tous les élements dont vous avez besoin avant de lancer votre site HTML en production.</h4>
 
-La **Checklist Front-End** est une liste exhaustive de tous les élements dont vous avez besoin avant de lancer votre site HTML en production.
+<p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+  </a>
+  <a href="https://gitpod.io/#https://github.com/thedaviddias/Front-End-Checklist">
+  <img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" alt="Gitpod Ready-to-Code">
+  </a>
+    <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg?style=flat-square" alt="Contributors">
+  </a>
+  <a href="https://spectrum.chat/front-end-checklist">
+    <img src="https://img.shields.io/badge/chat-on_spectrum-4837E2.svg?style=flat-square" alt="Spectrum">
+  </a>
+      <a href="https://github.com/thedaviddias/Front-End-Checklist/">
+    <img src="https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg?style=flat-square" alt="Front‑End_Checklist followed">
+</a>
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="https://img.shields.io/badge/license-CC0-green.svg?style=flat-square" alt="CC0">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#comment-utiliser">Comment utiliser</a> • <a href="#contributing">Contribuer</a> • <a href="https://frontendchecklist.io">Site Web [EN]</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
+</p>
+<p align="center">
+    <span>Autres Checklists:</span>
+    <br>
+  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Performance Checklist [EN]</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Checklist [EN]</a>
+</p>
 
 Celle-ci est basée sur des années d'experience de développeurs Front-End, en y ajoutant divers checklists de projets open-source.
-
-*Si vous l'aimez , merci de la partager en votant sur Product Hunt*
-[![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
 ## Table des matières
 
@@ -21,9 +49,9 @@ Celle-ci est basée sur des années d'experience de développeurs Front-End, en 
 4. **[CSS](#css)**
 5. **[Images](#images)**
 6. **[JavaScript](#javascript)**
-7. **[Securité](#security)**
+7. **[Securité](#securité)**
 8. **[Performance](#performance-1)**
-9. **[Accessibilité](#accessibility)**
+9. **[Accessibilité](#accessibilité)**
 10. **[SEO](#seo)**
 
 ## Comment l'utiliser ?
@@ -38,7 +66,7 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 
 * 📖: documentation ou article
 * 🛠: outil online  / outil de test
-* 📹: media ou contenu vidéo 
+* 📹: media ou contenu vidéo
 
 ---
 
@@ -424,7 +452,7 @@ Le balisage xml minimum requis pour le balisage du fichier browserconfig.xml doi
 
 > * 🛠 [Personnaliser votre Modernizr](https://modernizr.com/download?setclasses)
 
-### Tester le JavaScript 
+### Tester le JavaScript
 
 * [ ] **ESLint:** ![Haut][high_img] Pas d'erreurs détéctés par ESLint (basé sur votre configuration ou sur les règles standards).
 
@@ -647,7 +675,7 @@ La Checklist Front-End est aussi disponible dans d'autres langues. Merci aux tra
 * FR French: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 ---
 
-## Le badge Front-End Checklist 
+## Le badge Front-End Checklist
 
 Si vous voulez montrer que vous suivez les règles de la  Checklist Front-End, posez ce badge sur votre fichier README!
 
