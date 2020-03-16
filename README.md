@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <a href="#comment-utiliser">Comment utiliser</a> • <a href="#contributing">Contribuer</a> • <a href="https://frontendchecklist.io">Site Web [EN]</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
+  <a href="#comment-lutiliser">Comment utiliser</a> • <a href="#contribuer">Contribuer</a> • <a href="https://frontendchecklist.io">Site Web [EN]</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
 </p>
 <p align="center">
     <span>Autres Checklists:</span>
@@ -53,13 +53,16 @@ Celle-ci est basée sur des années d'experience de développeurs Front-End, en 
 8. **[Performance](#performance-1)**
 9. **[Accessibilité](#accessibilité)**
 10. **[SEO](#seo)**
+11. **[Traductions](#traduction)**
+
+---
 
 ## Comment l'utiliser ?
 
-Tous les élements de la **Front-End Checklist** sont requis dans la majorité de vos projets, mais certains peuvent être omis ou ne sont pas essentiels (par exemple, dans le cas d'une application d'administration , vous n'avez pas besoin de flux RSS). Nous avons choisi d'utiliser  3 niveaux de flexibilité:
+Tous les élements de la **Front-End Checklist** sont requis dans la majorité de vos projets, mais certains peuvent être omis ou ne sont pas essentiels (par exemple, dans le cas d'une application d'administration, vous n'avez pas besoin de flux RSS). Nous avons choisi d'utiliser 3 niveaux de flexibilité:
 
 * ![Bas][low_img] signifie que l'élement est **recommandé** mais peut être omis dans certaines situations.
-* ![Moyen][medium_img] signifie que l'élement est **hautement recommandé** et peut éventuellement être omis dans certains cas particuliers . Certains élements s'ils sont omis peuvent avoir des mauvais effets secondaires en terme de performance ou de référencement (SEO).
+* ![Moyen][medium_img] signifie que l'élement est **hautement recommandé** et peut éventuellement être omis dans certains cas particuliers. Certains élements, s'ils sont omis, peuvent avoir des mauvais effets secondaires en terme de performance ou de référencement (SEO).
 * ![Haut][high_img] signifie que l'élement **est indispensable**. Vous pouvez provoquer des dysfonctionnements dans votre page, ou avoir des problèmes d'accessibilité, voir de SEO. La priorité des tests doit d'abord s'assurer de ces éléments en premier.
 
 Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel type de contenu il s'agit :
@@ -83,9 +86,9 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 <!doctype html>
 ```
 
-> * 📖 [Determiner l'encodage - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+> * 📖 [Determiner l'encodage - HTML5 W3C (en)](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*Les prochains 3 meta tags (Charset, X-UA Compatible and Viewport) doivent venir en premier dans le head.*
+*Les prochains 2 meta tags (Charset et Viewport) doivent venir en premier dans le head.*
 
 * [ ] **Charset:** ![Haut][high_img] Le charset (UTF-8) est correctement declaré.
 
@@ -94,20 +97,11 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 <meta charset="utf-8">
 ```
 
-* [ ] **X-UA-Compatible:** ![Moyen][medium_img] Le meta tag X-UA-Compatible est présent.
-
-```html
-<!-- Instruct Internet Explorer to use its latest rendering engine -->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-```
-
-> * 📖 [Specifier le mode d'héritage des documents (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
-
 * [ ] **Viewport:** ![Haut][high_img] Le viewport est correctement déclaré.
 
 ```html
 <!-- Viewport for responsive web design -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
 * [ ] **Title:** ![Haut][high_img] Un titre est utilisé sur chaque page (SEO: Google calcule la largeur des pixels de chaque caractères utilisés dans le titre, et coupe entre 472 et 482 pixels. La limite moyenne de caractères se situe autour des 55).
@@ -117,8 +111,8 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 <title>Page Title less than 55 characters</title>
 ```
 
-> * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
-> * 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
+> * 📖 [Title - HTML - MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/title)
+> * 🛠 [SERP Snippet Generator (en)](https://www.sistrix.com/serp-snippet-generator/)
 
 * [ ] **Description:** ![Haut][high_img] Une meta description est fournie, elle est unique et ne contient pas plus de 150 caractères.
 
@@ -127,7 +121,7 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 <meta name="description" content="Description of the page less than 150 characters">
 ```
 
-> * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
+> * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/fr/docs/Apprendre/HTML/Introduction_%C3%A0_HTML/The_head_metadata_in_HTML#Ajouter_le_nom_de_lauteur_et_une_description)
 
 * [ ] **Favicons:** ![Moyen][medium_img] Chaque favicon a été créé et s'affiche correctement. Si vous avez un `favicon.ico`, posez le à la racine de votre site. Normalement vous n'avez pas besoin d'utiliser de balise. Cependant, cela reste une bonne pratique de le relier comme dans l'exemple ci-dessous. Aujourd'hui, **Le PNG est recommandé** en remplacement du format `.ico` (dimensions: 32x32px).
 
@@ -138,20 +132,28 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
-> * 🛠 [Favicon Generator](https://www.favicon-generator.org/)
-> * 🛠 [RealFaviconGenerator](https://realfavicongenerator.net/)
-> * 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
-> * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
-> * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
+> * 🛠 [Favicon Generator (en)](https://www.favicon-generator.org/)
+> * 🛠 [RealFaviconGenerator (en)](https://realfavicongenerator.net/)
+> * 📖 [Favicon Cheat Sheet (en)](https://github.com/audreyr/favicon-cheat-sheet)
+> * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks (en)](https://css-tricks.com/favicon-quiz/)
+> * 📖 [PNG favicons - caniuse (en)](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Bas][low_img] Les favicons Apple touch apple-mobile-web-app-capable sont présents. *(Créer vos icones Apple avec au pire des dimensions de 200x200px pour supporter toutes les dimensions dont vous aurez besoin)*
+* [ ] **Apple Web App Meta:** ![Bas][low_img] Les meta-tags spécifiques à Apple sont présents.*
 
 ```html
-<!-- Apple Touch Icon -->
+<!-- Apple Touch Icon (at least 200x200px) -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
+
+<!-- To run web application in full-screen -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+<!-- Has no effect unless you have the previous meta tag -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 ```
 
-> * 📖 [Configurer des Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [Configurer des Web Applications (en)](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [Supported Meta Tags (en)](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 - [ ] **Windows Tiles:**![Bas][low_img] Les tuiles Windows sont présentes et liées.
 
@@ -160,7 +162,7 @@ Plusieurs resources possèdent un emoticon pour vous aider à comprendre quel ty
 <meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
-Le balisage xml minimum requis pour le balisage du fichier browserconfig.xml doit être:
+Le balisage xml minimum requis pour le balisage du fichier `browserconfig.xml` doit être:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -176,7 +178,7 @@ Le balisage xml minimum requis pour le balisage du fichier browserconfig.xml doi
 </browserconfig>
 ```
 
-> * 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
+> * 📖 [Browser configuration schema reference (en)](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
 * [ ] **Canonical:** ![Moyen][medium_img] Utiliser `rel="canonical"` pour éviter le contenu dupliqué.
 
@@ -185,18 +187,18 @@ Le balisage xml minimum requis pour le balisage du fichier browserconfig.xml doi
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
-> * 📖 [Use canonical URLs - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
-> * 📖 [5 common mistakes with rel=canonical - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
+> * 📖 [Use canonical URLs - Search Console Help - Google Support (en)](https://support.google.com/webmasters/answer/139066?hl=en)
+> * 📖 [5 common mistakes with rel=canonical - Google Webmaster Blog (en)](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
 ### HTML tags
 
 * [ ] **Language attribute:** ![Haute][high_img] L'attribut `lang` de votre site est spécifié et indique le langage de la page courante.
 
 ```html
-<html lang="en">
+<html lang="fr">
 ```
 
-* [ ] **L'attribut direction :** ![Moyen][medium_img] Le sens de lecture est specifié dans le tag html (Il peut être indiqué dans un autre tag HTML).
+* [ ] **L'attribut direction :** ![Moyen][medium_img] Le sens de lecture est specifié dans le tag html (Il peut être indiqué dans un autre élément HTML).
 
 ```html
 <html dir="rtl">
