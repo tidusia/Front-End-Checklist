@@ -204,9 +204,9 @@ Le balisage xml minimum requis pour le balisage du fichier `browserconfig.xml` d
 <html dir="rtl">
 ```
 
-> * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
+> * 📖 [dir - HTML - MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] Le tag language de votre site est specifié et est en relation avec le language de la page courante.
+* [ ] **Alternate language:** ![Low][low_img] Un lien vers la traduction de la page courante est spécifié.
 
 ```html
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
@@ -214,16 +214,19 @@ Le balisage xml minimum requis pour le balisage du fichier `browserconfig.xml` d
 
 * [ ] **Commentaire conditionel:** ![Low][low_img] Les commentaires conditionnels sont présents pour IE si besoin.
 
-> * 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
+> * 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft (en)](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
 * [ ] **Flux RSS:** ![Bas][low_img] Si votre projet est un blog ou possède des articles, un flux RSS est fourni.
 
 * [ ] **Inline critical CSS:** ![Moyen][medium_img] Les CSS des contenus qui doivent être immédiatement visibles pendant le chargement ("au dessus de la ligne de flottaison") sont appelés "CSS critiques". Ils sont inclus avant le CSS principal et entre les balises `<style></style>` dans une seule ligne (en étant minifié).
-> * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automatise cela
+
+> * 🛠 [Critical by Addy Osmani on GitHub (en)](https://github.com/addyosmani/critical) automatise cela.
 
 * [ ] **Ordre des CSS :** ![Haute][high_img] Tous les fichiers CSS sont chargés avant n'importe quel fichier JavaScript dans la section `<head>`. (Parfois certains fichiers JS sont chargés en asynchrone en haut de page, et font donc exception à la règle).
 
 ### Social meta
+
+Visualisez et générez automatiquement vos meta pour réseaux sociaux avec [Meta Tags](https://metatags.io/)
 
 ***Facebook OG*** et ***Twitter Cards*** sont pour tous les sites, hautement recommandés. Les autres tags de média sociaux peuvent être utiles si vous ciblez une audience particulère et que vous voulez vous assurer un affichage particulier.
 
@@ -246,7 +249,7 @@ Le balisage xml minimum requis pour le balisage du fichier `browserconfig.xml` d
 
 > * 📖 [Guide du partage pour les Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
 > * 📖 [Bonnes pratiques du partage](https://developers.facebook.com/docs/sharing/best-practices/)
-> * 🛠 Tester votre page avec [Facebook OG testing](https://developers.facebook.com/tools/debug/)
+> * 🛠 Tester votre page avec [Facebook OG testing (en)](https://developers.facebook.com/tools/debug/)
 
 * [ ] **Twitter Card:** ![Low][low_img]
 
@@ -260,7 +263,7 @@ Le balisage xml minimum requis pour le balisage du fichier `browserconfig.xml` d
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
-> * 📖 [Débutez avec les cartes — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
+> * 📖 [Getting started with cards — Twitter Developers (en)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 > * 🛠 Tester votre page avec [Twitter card validator](https://cards-dev.twitter.com/validator)
 
 **[⬆ Retour en haut](#table-des-matières)**
